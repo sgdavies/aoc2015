@@ -1,4 +1,4 @@
-a='1113122113'
+a=.'1113122113'
 
 NB. indices where y is not equal to its offset
 changeindices =: 3 : '((-.y='' '',}:y) #i.#y)'
@@ -14,16 +14,14 @@ lookandsay =: 3 : 0
 
 partone =: 4 : 0
   v =. y
-  echo v
-  for. x do.
+  for. i. x do.
     v =. lookandsay v
-    echo v
   end.
-  echo v
-  #v
+  v
 )
 
-5 partone '1'
-NB. echo 40 partone a
+NB. echo 5 partone '1'
+echo # 40 partone a
+echo # 50 partone a
 
 exit 0
